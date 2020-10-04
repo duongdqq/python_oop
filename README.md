@@ -53,8 +53,8 @@
 12. Biến của lớp
 - Được truy cập thông qua tên class hoặc object
 - Nên truy cập biến của lớp thông qua tên lớp thay vì đối tượng để tránh nhầm lẫn giữa biến của lớp và thuộc tính
-- Mỗi biến của lớp có 1 địa chỉ
+- Mỗi biến của lớp có 1 địa chỉ nằm trên memory và chia sẻ cho mọi đối tượng
 13. Liệt kê danh sách các thành viên 
-
+- Python cung cấp cho bạn hàm dir, hàm này liệt kê ra danh sách các phương thức, thuộc tính, biến của lớp hoặc của đối tượng.
 14. Hủy đối tượng
 
