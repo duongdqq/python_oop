@@ -1,6 +1,6 @@
 # python_oop
-# link 1 https://o7planning.org/vi/11415/lop-va-doi-tuong-trong-python
-# link 2 https://phocode.com/python/python-huong-doi-tuong-trong-python/
+### link 1 https://o7planning.org/vi/11415/lop-va-doi-tuong-trong-python
+### link 2 https://phocode.com/python/python-huong-doi-tuong-trong-python/
 1. Một số khái niệm
 - Class: là một kiểu dữ liệu người dùng tự định nghĩa,tập hợp nhiều thuộc tính đặc trưng cho mọi đối tượng được tạo ra từ lớp đó. Các thuộc tính là các biến thành viên hoặc phương thức
 - Object: là một thể hiện cụ thể (thực thể) của CTDL được định nghĩa trong lớp. Mỗi object bao gồm cả biến thành viên và phương thức. Ví dụ list, tuple, dictionary, string, int là các class. Khi khai báo biến thuộc các lớp này thì chúng là các object
