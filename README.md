@@ -96,4 +96,4 @@
   - init
   - str
   - len
-  - 
+  - del 
