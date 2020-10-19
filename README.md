@@ -52,10 +52,10 @@
 + setattr(obj,name,value)
 + delattr(obj, name)
 11. Các attribute có sẵn của class
-- '__dict__'
-- '__doc__'
-- '__class__'
-- '__module__'
+- ___dict__
+- __doc__
+- __class__
+- __module__
 12. Biến của lớp
 - Được truy cập thông qua tên class hoặc object
 - Nên truy cập biến của lớp thông qua tên lớp thay vì đối tượng để tránh nhầm lẫn giữa biến của lớp và thuộc tính
