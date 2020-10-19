@@ -1,8 +1,9 @@
 # python_oop
-
+# link 1 https://o7planning.org/vi/11415/lop-va-doi-tuong-trong-python
+# link 2 https://phocode.com/python/python-huong-doi-tuong-trong-python/
 1. Một số khái niệm
 - Class: là một kiểu dữ liệu người dùng tự định nghĩa,tập hợp nhiều thuộc tính đặc trưng cho mọi đối tượng được tạo ra từ lớp đó. Các thuộc tính là các biến thành viên hoặc phương thức
-- Object: là một thể hiện cụ thể của CTDL được định nghĩa trong lớp. Mỗi object bao gồm cả biến thành viên và phương thức
+- Object: là một thể hiện cụ thể (thực thể) của CTDL được định nghĩa trong lớp. Mỗi object bao gồm cả biến thành viên và phương thức. Ví dụ list, tuple, dictionary, string, int là các class. Khi khai báo biến thuộc các lớp này thì chúng là các object
 - Data member: là biến được định nghĩa trong class hoặc object
 - Method: là hàm được định nghĩa trong class nhằm thực hiện 1 công việc cụ thể
 - Inheritace: là một tính chất của các ngôn ngữ OOP cho phép các class kế thừa các đặc trưng của lớp được kế thừa
@@ -20,7 +21,7 @@
 - Để sử dụng Method cần gọi thông qua Object
 - Tham số đầu tiên của Method luôn là self
 5. Constructor
-- Là phương thức khởi tạo. Là một method đặc biệt của class, nó luôn có tên là __init__
+- Là phương thức khởi tạo. Là một method đặc biệt của class, nó luôn có tên là '__init__'
 - Tham số đầu tiên của constructor luôn là self
 - Constructor được dùng để tạo ra một object
 - Constructor gán giá trị từ tham số vào các attribute của object sẽ được tạo ra
@@ -38,6 +39,11 @@
 - Các object được tạo từ cùng 1 class sẽ nằm tại các địa chỉ khác nhau trên bộ nhớ
 - Các attribute cùng tên cũng có các địa chỉ khác nhau trên bộ nhớ
 - Python cho phép tạo 1 attribute mới cho 1 object cho trước
+- Có thể gán giá trị cho các thuộc tính và khai báo thuộc tính mới ở bất cứ đâu sau phần định nghĩa lớp chứ không chỉ riêng bên trong phương thức khởi tạo.
+- Thuộc tính được khai báo bên trong constructor '__init__' được gọi là thuộc tính đối tượng
+- Thuộc tính được khai báo bên trong class nhưng ngoài constructor '__init__' được gọi là thuộc tính lớp. 
+- Thuộc tính lớp được chia sẻ chung cho mọi đối tượng của lớp đó. Thuộc tính đối tượng chỉ dành riêng cho đối tượng
+- Có 2 cách truy xuất thuộc tính lớp. 1, thông qua tên lớp. 2, thông qua thuộc tính đặc biệt '__class__'
 10. Các hàm truy cập vào attribute
 - Thông thường, truy cập vào attribute của 1 class qua toán tử 'dấu chấm'
 - Tuy nhiên, python cho phép truy cập thông qua function
@@ -46,15 +52,22 @@
 + setattr(obj,name,value)
 + delattr(obj, name)
 11. Các attribute có sẵn của class
-- __dict__
-- __doc__
-- __class__
-- __module__
+- '__dict__'
+- '__doc__'
+- '__class__'
+- '__module__'
 12. Biến của lớp
 - Được truy cập thông qua tên class hoặc object
 - Nên truy cập biến của lớp thông qua tên lớp thay vì đối tượng để tránh nhầm lẫn giữa biến của lớp và thuộc tính
 - Mỗi biến của lớp có 1 địa chỉ nằm trên memory và chia sẻ cho mọi đối tượng
 13. Liệt kê danh sách các thành viên 
 - Python cung cấp cho bạn hàm dir, hàm này liệt kê ra danh sách các phương thức, thuộc tính, biến của lớp hoặc của đối tượng.
-14. Hủy đối tượng
-
+14. Các tính chất của OOP trong Python
+- Abstraction
+- Polymorphism
+- Encapsulation
+- Inheritance
+15. Self
+- Bất kỳ method nào của Python đều phải có tham số self đầu tiên rồi mới đến các tham số khác
+- self thực ra là biến đối tượng đã gọi method này
+- Không trực tiếp đưa tham số self vào mà chỉ đưa các tham số thứ 2 trở đi. self được tự động thêm vào bởi trình thông dịch
