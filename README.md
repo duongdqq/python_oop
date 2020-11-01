@@ -113,7 +113,7 @@
   - len
   - del 
   
-### 3 https://www.howkteam.vn/course/lap-trinh-huong-doi-tuong-voi-python/lop-va-doi-tuong-trong-lap-trinh-huong-doi-tuong-voi-python-3877
+### link 3 https://www.howkteam.vn/course/lap-trinh-huong-doi-tuong-voi-python/lop-va-doi-tuong-trong-lap-trinh-huong-doi-tuong-voi-python-3877
 1. Lớp và đối tượng trong lập trình hướng đối tượng với Python
 - <__main__.SieuNhan object at 0x0106CD10> có nghĩa là sieu_nhan_A là đối tượng thuộc lớp SieuNhan ở hàm main (file ta đang chạy thực thi) kèm theo địa chỉ lưu trữ nó
 - Constructor. Từ khóa self sẽ nhận giá trị chính là đối tượng đã gọi hàm init. Không có câu lệnh nào gọi hàm init. Thực tế hàm init tự động được gọi khi khởi tạo đối tượng. 
@@ -134,9 +134,9 @@
 3. Các phương thức lớp trong lập trình hướng đối tượng với Python
 - Những phương thức mà có mặc định parameter self gọi là regular method
 - Ngoài ra còn có class method và static method
-- Nếu regular method có argument đầu tiên tự động đưa vào là đối tượng đó và được nhận bởi parameter self thì ở class method, argument đầu tiên tự động đưa vào chính *lớp gọi phương thức đó* hoặc là *lớp của đối tượng gọi phương thức đó*
-- Theo quy ước thì parameter nhận argument này sẽ là cls.
-
+- Nếu regular method có argument đầu tiên tự động đưa vào là đối tượng đó và được nhận bởi parameter self thì ở class method, argument đầu tiên tự động đưa vào chính **lớp gọi phương thức đó** hoặc là **lớp của đối tượng gọi phương thức đó**
+- Theo quy ước thì parameter nhận argument này sẽ là **cls**. Để Python biết được phương thức nào là class method thì thêm @classmethod ngay trên dòng khai báo hàm. 
+* mặc định sẽ luôn có một argument được gửi vào đó chính là lớp gọi phương thức đó.
 
 
 
