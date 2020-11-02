@@ -135,9 +135,9 @@
 - Những phương thức mà có mặc định parameter self gọi là regular method
 - Ngoài ra còn có class method và static method
 - Nếu regular method có argument đầu tiên tự động đưa vào là đối tượng đó và được nhận bởi parameter self thì ở class method, argument đầu tiên tự động đưa vào chính **lớp gọi phương thức đó** hoặc là **lớp của đối tượng gọi phương thức đó**
-- Theo quy ước thì parameter nhận argument này sẽ là **cls**. Để Python biết được phương thức nào là class method thì thêm @classmethod ngay trên dòng khai báo hàm. 
-* mặc định sẽ luôn có một argument được gửi vào đó chính là lớp gọi phương thức đó.
-
+- Theo quy ước thì parameter nhận argument này sẽ là **cls**. Để Python biết được phương thức nào là class method thì thêm @classmethod ngay trên dòng khai báo hàm. Mặc định sẽ luôn có một argument được gửi vào đó chính là lớp gọi phương thức đó. Hoặc lớp của đối tượng gọi phương thức đó
+- Tuy nhiên, ứng dụng chủ yếu của class method là để tạo đối tượng
+- VD, muốn khởi tạo một siêu nhân nhưng một số siêu nhân có các thông tin không tường mình mà lại được lưu dưới dạng 1 list hay 1 chuỗi. Cần có 1 bước tiền xử lý trước khi ra được các thông tin của 1 siêu nhân nào đó mới tạo được 1 đối tượng
 
 
 
