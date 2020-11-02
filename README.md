@@ -147,6 +147,10 @@
   - Cần dùng class thì dùng class method
   - TH còn lại - tức không dùng gì thì dùng static method
   
-4. 
+4. Tạo lớp kế thừa trong lập trình hướng đối tượng với Python
+- super()
+- Kế thừa thuộc tính
+- Kế thừa constructor
+- Kế thừa method
 
 
